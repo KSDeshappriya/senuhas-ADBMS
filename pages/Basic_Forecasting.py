@@ -49,7 +49,12 @@ if conn:
             # Fit a linear model (degree 1 polynomial)
             # We need at least two points to fit a line
             if len(historical_sales_df) >= 2:
-                coeffs = np.polyfit(historical_sales_df['time_index'], historical_sales_df['monthly_sales'], 1)
+                # Convert Decimal to float
+                x = historical_sales_df['time_index'].astype(float)
+                y = historical_sales_df['monthly_sales'].astype(float)
+                # Fit a linear regression model
+                coeffs = np.polyfit(x, y, 1)
+
                 slope = coeffs[0]
                 intercept = coeffs[1]
             else: # Should not happen due to above check, but as a fallback
