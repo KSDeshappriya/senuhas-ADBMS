@@ -4,3 +4,4 @@ mysql-connector-python
 pandas
 plotly
 numpy # For basic forecasting
+argparse
