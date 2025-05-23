@@ -1,0 +1,15 @@
+senuhas_dashboard/
+├── .streamlit/
+│   └── config.toml         # Optional: For theme, etc.
+├── pages/                  # For multi-page app structure
+│   ├── 01_📊_Dashboard.py
+│   ├── 02_📈_Sales_Trends.py
+│   ├── 03_🔮_Basic_Forecasting.py
+│   └── 04_🛠️_Database_Explorer.py
+├── app.py                  # Main landing page/entry point
+├── db_config.py            # Database connection details (gitignored ideally)
+├── database.py             # Functions to interact with the database
+├── queries.py              # SQL query strings
+├── requirements.txt        # Python dependencies
+└── data/
+    └── senuhas_db.sql.txt  # Your SQL dump
