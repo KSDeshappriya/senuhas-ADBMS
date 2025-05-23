@@ -125,7 +125,7 @@ MIT
 
 ## 👥 Contributors
 
-- Your Name - Initial development
+- Kavindu Shehan - Initial development
 
 ---
 
