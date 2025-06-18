@@ -2,6 +2,8 @@
 
 A Streamlit-based web application for managing and analyzing data from Senuhas stores.
 
+![Demo Screenshot](docs/demo01.png)
+
 ## 🚀 Features
 
 - **Dashboard:** Quick overview of key metrics
@@ -12,22 +14,22 @@ A Streamlit-based web application for managing and analyzing data from Senuhas s
 ## 📦 Installation
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/KSDeshappriya/senuhas-ADBMS.git
    cd senuhas-ADBMS
    ```
-
 2. Create and activate a virtual environment (optional but recommended):
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-
 3. Install the required packages:
+
    ```bash
    pip install -r requirements.txt
    ```
-
 4. Configure your database connection (see Configuration section)
 
 ## 🔧 Configuration
@@ -100,9 +102,17 @@ streamlit-senuhas/
 └── README.md             # This file
 ```
 
+## Demo
+
+![Demo Screenshot](docs/demo01.png)
+![Demo Screenshot](docs/demo02.png)
+![Demo Screenshot](docs/demo03.png)
+![Demo Screenshot](docs/demo04.png)
+
 ## 📊 Database Schema
 
 The application expects a MySQL database named `senuhas_db` with tables for:
+
 - Products
 - Categories
 - Sales
@@ -115,6 +125,7 @@ You can create these tables manually or use the initialization script `db/init_d
 ## 🔍 Development
 
 To add new pages:
+
 1. Create a new Python file in the `pages/` directory
 2. The filename should start with a number for proper ordering (e.g., `05_New_Page.py`)
 3. Use Streamlit components to build your page
