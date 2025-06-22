@@ -1,5 +1,7 @@
 # Senuhas Database Management System
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/KSDeshappriya/senuhas-ADBMS)
+
 A Streamlit-based web application for managing and analyzing data from Senuhas stores.
 
 ![Demo Screenshot](docs/demo01.png)
